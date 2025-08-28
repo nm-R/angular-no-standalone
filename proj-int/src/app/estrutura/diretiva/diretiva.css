@@ -1,0 +1,16 @@
+.isativo{
+    background-color: blue;
+    font-weight: bold;
+    width: fit-content;
+}
+.isinativo{
+    background-color: red;
+    font-weight: bold;
+    width: fit-content;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
