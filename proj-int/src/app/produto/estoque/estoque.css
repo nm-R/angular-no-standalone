@@ -1,0 +1,20 @@
+.esgotado {
+  background-color: red;
+  font-style: italic;
+}
+
+.disponivel {
+  background-color: green;
+}
+ol{
+    display:inline-block
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#button{
+    margin-right: 10px;
+}

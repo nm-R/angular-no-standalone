@@ -15,6 +15,11 @@ loadChildren: () => import('./contador/contador-module').then(m=> m.ContadorModu
 path:'estrutura',
 loadChildren: () => import('./estrutura/estrutura-module').then(m=> m.EstruturaModule)
 
+},
+
+{
+  path: 'produto',
+  loadChildren: () => import('./produto/produto-routing-module').then(m => m.ProdutoRoutingModule)
 }
 
 

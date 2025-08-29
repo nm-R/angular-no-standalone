@@ -1,0 +1,14 @@
+<div class="center">
+<ol>
+    <li *ngFor="let produto of produtos" [ngClass]="{'esgotado': produto.estoque <= 0, 'disponivel': produto.estoque > 0}">
+        <div *ngIf="produto.estoque > 0">{{ produto.nome }} - <span [ngStyle]="{'background-color': produto.preco > 2000 ? 'blue' : 'black', 'color': produto.preco > 2000 ? 'black' : 'white'}">R$ {{ produto.preco | number:'1.2-2' }}</span> - Estoque: {{ produto.estoque }} disponivel</div>
+        <div *ngIf="produto.estoque <= 0">{{ produto.nome }} - <span [ngStyle]="{'background-color': produto.preco > 2000 ? 'blue' : 'black', 'color': produto.preco > 2000 ? 'black' : 'white'}">R$ {{ produto.preco | number:'1.2-2' }}</span> - Estoque: {{ produto.estoque }} esgotado</div>
+    </li>
+</ol>
+<div>
+<button (click)="aumentarPreco()" id="button">+</button>
+<button (click)="diminuirPreco()">-</button>
+</div>
+</div>
+
+
