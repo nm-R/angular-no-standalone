@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ListaProdutosComponent {
 
+  listaProdutos: string[] = ['Produto 1', 'Produto 2', 'Produto 3', 'Produto 4', 'Produto 5'];
 }
