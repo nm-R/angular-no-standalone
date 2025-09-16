@@ -28,6 +28,10 @@ loadChildren: () => import('./estrutura/estrutura-module').then(m=> m.EstruturaM
 {
   path: 'dados',
   loadChildren: () => import('./dados/dados-routing-module').then(m => m.DadosRoutingModule)
+},
+{
+  path: 'funcionario',
+  loadChildren: () => import('./funcionario/funcionario-routing-module').then(m => m.FuncionarioRoutingModule)
 }
 
 
